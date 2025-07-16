@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thylemeaf.org">
+  <div th:insert="~{@{reusable-code/header}}"></div>
+<body class="bg-light text-center">
+  <div class='bg-image'>
+   <div class="container py-5">
+        <div class="card mx-auto shadow" style="max-width:40%;">
+            <div class="card-body">
+            	<p class="fs-3 card-title">Your Account Balance</p>
+                <p class="card-text display-6 text-success">&#8377;<span id="balance" th:text="${amount}"></span></p>
+                <button type="button" class='btn btn-primary' onclick="history.back()">Back Home</button>
+            </div>
+        </div>
+    </div>
+   </div> 
+    <div th:insert="~{reusable-code/footer}"></div>
+</body>
+</html>
